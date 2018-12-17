@@ -1,0 +1,25 @@
+﻿Запуск проекта:
+1) npm install -g json-server
+
+2) json-server --watch db.json
+
+База данных расположена в db.json
+
+http://localhost:3000/students
+
+Доступ(пароли):
+{
+    login: 's',
+    password: '111',
+    role: 'Student'
+  },
+  {
+    login: 't',
+    password: '222',
+    role: 'Teacher'
+  },
+  {
+    login: 'a',
+    password: '333',
+    role: 'Admin'
+  }

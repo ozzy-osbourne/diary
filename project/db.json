@@ -1,0 +1,410 @@
+{
+  "groups": [
+    "Group-A1",
+    "Group-B2",
+    "Group-C3"
+  ],
+  "teacher": [
+    {
+      "id": 1,
+      "surname": "Someone",
+      "name": "Some",
+      "patronymic": "Someonovna",
+      "groups": [
+        "Group-A1",
+        "Group-B2",
+        "Group-C3"
+      ],
+      "roles": [
+        "teacher"
+      ],
+      "group": null,
+      "subjects": "Информатика"
+    },
+    {
+      "surname": "Someone2",
+      "name": "Some2",
+      "patronymic": "Someonovna2",
+      "roles": [
+        "teacher"
+      ],
+      "group": null,
+      "id": 2
+    },
+    {
+      "id": 3,
+      "surname": "Someone3",
+      "name": "Some3",
+      "patronymic": "Someonovna3",
+      "groups": [
+        "Group-A1"
+      ],
+      "roles": [
+        "teacher"
+      ],
+      "group": null,
+      "subjects": "Математика"
+    },
+    {
+      "id": 4,
+      "surname": "Someone4",
+      "name": "Some4",
+      "patronymic": "Someonovna4",
+      "groups": [
+        "Group-B2",
+        "Group-C3"
+      ],
+      "roles": [
+        "teacher"
+      ],
+      "group": null,
+      "subjects": "Английский язык"
+    },
+    {
+      "surname": "8800",
+      "name": "444",
+      "patronymic": "333",
+      "roles": [
+        "teacher"
+      ],
+      "group": null,
+      "id": 5,
+      "groups": [
+        "Group-B2",
+        "Group-C3"
+      ]
+    }
+  ],
+  "student": [
+    {
+      "id": 5,
+      "surname": "Osbourne",
+      "name": "Ozzy",
+      "patronymic": "Michael",
+      "group": "Group-A1",
+      "roles": [
+        "student"
+      ],
+      "subjects": {
+        "1": [
+          "",
+          "3",
+          "4",
+          "2",
+          " "
+        ],
+        "2": [
+          "3",
+          "2",
+          " ",
+          "3",
+          "5"
+        ],
+        "3": [
+          "5",
+          " ",
+          "3",
+          " ",
+          "4"
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "surname": "Someone",
+      "name": "Some",
+      "patronymic": "Someonov",
+      "group": "Group-A1",
+      "roles": [
+        "student"
+      ],
+      "subjects": {
+        "1": [
+          "",
+          "3",
+          "4",
+          "2",
+          " "
+        ],
+        "2": [
+          "3",
+          "2",
+          " ",
+          "3",
+          "5"
+        ],
+        "3": [
+          "5",
+          " ",
+          "3",
+          " ",
+          "4"
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "surname": "Someone2",
+      "name": "Some2",
+      "patronymic": "Someonov2",
+      "group": "Group-A1",
+      "roles": [
+        "student"
+      ],
+      "subjects": {
+        "1": [
+          "",
+          "3",
+          "4",
+          "2",
+          " "
+        ],
+        "2": [
+          "3",
+          "2",
+          " ",
+          "3",
+          "5"
+        ],
+        "3": [
+          "5",
+          " ",
+          "3",
+          " ",
+          "4"
+        ]
+      }
+    },
+    {
+      "surname": "Someone3",
+      "name": "Some3",
+      "patronymic": "Someonov3",
+      "roles": [
+        "student"
+      ],
+      "group": "Group-C3",
+      "id": 8,
+      "subjects": {
+        "1": [
+          "",
+          "3",
+          "4",
+          "2",
+          " "
+        ],
+        "2": [
+          "3",
+          "2",
+          " ",
+          "3",
+          "5"
+        ],
+        "3": [
+          "5",
+          " ",
+          "3",
+          " ",
+          "4"
+        ]
+      }
+    },
+    {
+      "surname": "Someone4",
+      "name": "Some4",
+      "patronymic": "Someonov4",
+      "roles": [
+        "student"
+      ],
+      "group": "Group-B2",
+      "id": 9,
+      "subjects": {
+        "1": [
+          "2",
+          "3",
+          "4",
+          "2",
+          " "
+        ],
+        "2": [
+          "3",
+          "2",
+          " ",
+          "3",
+          "5"
+        ],
+        "3": [
+          "5",
+          " ",
+          "3",
+          " ",
+          "4"
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "surname": "Someone5",
+      "name": "Some5",
+      "patronymic": "Someonov5",
+      "group": "Group-B2",
+      "roles": [
+        "student"
+      ],
+      "subjects": {
+        "1": [
+          "",
+          "3",
+          "4",
+          "2",
+          " "
+        ],
+        "2": [
+          "3",
+          "2",
+          " ",
+          "3",
+          "5"
+        ],
+        "3": [
+          "5",
+          " ",
+          "3",
+          " ",
+          "4"
+        ]
+      }
+    },
+    {
+      "id": 11,
+      "surname": "Someone6",
+      "name": "Some6",
+      "patronymic": "Someonov6",
+      "group": "Group-C3",
+      "roles": [
+        "student"
+      ],
+      "subjects": {
+        "1": [
+          "",
+          "3",
+          "4",
+          "2",
+          " "
+        ],
+        "2": [
+          "3",
+          "2",
+          " ",
+          "3",
+          "5"
+        ],
+        "3": [
+          "5",
+          " ",
+          "3",
+          " ",
+          "4"
+        ]
+      }
+    },
+    {
+      "id": 12,
+      "surname": "Someone7",
+      "name": "Some7",
+      "patronymic": "Someonov7",
+      "group": "Group-C3",
+      "roles": [
+        "student"
+      ],
+      "subjects": {
+        "1": [
+          "",
+          "3",
+          "4",
+          "2",
+          " "
+        ],
+        "2": [
+          "3",
+          "2",
+          " ",
+          "3",
+          "5"
+        ],
+        "3": [
+          "5",
+          " ",
+          "3",
+          " ",
+          "4"
+        ]
+      }
+    },
+    {
+      "id": 14,
+      "surname": "Someone8",
+      "name": "Some8",
+      "patronymic": "Someonov8",
+      "group": "Group-C3",
+      "roles": [
+        "student"
+      ],
+      "subjects": {
+        "1": [
+          "",
+          "3",
+          "4",
+          "2",
+          " "
+        ],
+        "2": [
+          "3",
+          "2",
+          " ",
+          "3",
+          "5"
+        ],
+        "3": [
+          "5",
+          " ",
+          "3",
+          " ",
+          "4"
+        ]
+      }
+    },
+    {
+      "surname": "999",
+      "name": "6663",
+      "patronymic": "777",
+      "roles": [
+        "student"
+      ],
+      "group": "Group-B2",
+      "id": 18,
+      "subjects": {
+        "1": [
+          "4",
+          "",
+          "",
+          "",
+          " "
+        ],
+        "2": [
+          "3",
+          "3",
+          "",
+          "3",
+          "5"
+        ],
+        "3": [
+          "5",
+          "",
+          "3",
+          "",
+          "4"
+        ]
+      }
+    }
+  ]
+}

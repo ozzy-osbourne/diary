@@ -1,0 +1,24 @@
+<form class="card" [formGroup]="form">
+  <div class="card-content">
+
+    <div class="card-title">Войти в систему</div>
+
+    <div class="input-field">
+      <label for="login">Email:</label>
+      <input id="login" formControlName="login">
+    </div>
+
+    <div class="input-field">
+      <label for="password">Пароль:</label>
+      <input id="password" type="password" formControlName="password">
+    </div>
+
+    <a routerLink="/">На главную</a>
+
+    <div class="card-action">
+      <button mat-button (click)="onSubmit()">Войти</button>
+    </div>
+
+  </div>
+
+</form>

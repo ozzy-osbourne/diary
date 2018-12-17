@@ -1,0 +1,34 @@
+<div class="my-table-grade">
+  <div>
+
+    <div *ngIf="role === 'student'">
+      <table class="simple-little-table" cellspacing='0'>
+        <tr>
+          <th>Предметы</th>
+          <th *ngFor="let day of days;">{{day}}</th>
+        </tr>
+        <tr *ngFor="let subjIndex of subjectsIndex; let idx = index">
+          <td>{{subjectsName[subjIndex]}}</td>
+          <td *ngFor="let mark of user.subjects[subjIndex]; let idx = index" (click)="changeGrade(subjIndex, idx)">
+            {{(subjIndex == subIndex && idx == IDx) ? '' : mark }}<input *ngIf="subjIndex == subIndex && idx == IDx" id="mark" type="text" [(ngModel)]="markU" (keyup.enter)="update(subjIndex, idx)">
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div *ngIf="role === 'teacher'">
+      <table mat-table [dataSource]="user.groups" class="mat-elevation-z8">
+
+        <ng-container matColumnDef="groups">
+          <th mat-header-cell *matHeaderCellDef> Группы </th>
+          <td mat-cell *matCellDef="let group"> {{group}} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns; let group" [routerLink]="['/changeUser' , group]"></tr>
+
+      </table>
+    </div>
+
+  </div>
+</div>

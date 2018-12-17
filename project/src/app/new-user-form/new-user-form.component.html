@@ -1,0 +1,41 @@
+<h2>Форма </h2>
+
+<form class="card" [formGroup]="form">
+  <div class="card-content">
+    <div class="input-field">
+      <label for="surname">Фамилия</label>
+        <input matInput type="text" formControlName="surname" placeholder="Фамилия" id="surname">
+    </div>
+
+    <div class="input-field">
+      <label for="name">Имя</label>
+        <input matInput type="text" formControlName="name" placeholder="Имя" id="name">
+    </div>
+
+    <div class="input-field">
+      <label for="patronymic">Отчество</label>
+        <input matInput type="text" formControlName="patronymic" placeholder="Отчество" id="patronymic">
+    </div>
+
+    <div>
+      <label for="roles">Роль</label>
+        <select formControlName="roles" id="roles">
+          <option [value] = "role" *ngFor = "let role of userRoles"> {{role}} </option>
+        </select>
+    </div>
+
+    <div>
+      <label for="group">Группа</label>
+        <select formControlName="group" id="group">
+          <option [value] = "group" *ngFor = "let group of groups"> {{group}} </option>
+        </select>
+    </div>
+
+    <div class="card-action">
+      <button type="button" mat-button (click)="AddUser()">Создать</button> &nbsp;
+      <button type="button" mat-button (click)="Back()">Назад</button>
+    </div>
+
+  </div>
+
+</form>

@@ -1,0 +1,12 @@
+<nav mat-tab-nav-bar>
+  <a mat-tab-link [routerLink]="" >мнню1(просто кнопка)</a>
+  <a mat-tab-link [routerLink]="" >мнню2(просто кнопка)</a>
+  <a mat-tab-link [routerLink]="" >мнню3(просто кнопка)</a>
+  <a mat-tab-link routerLink="/users" *ngIf="IsAuthorize()">поспотреть дневник</a>
+  <button mat-button (click)="toLogin()" *ngIf="!IsAuthorize()">Войти</button>
+  <button type="button" mat-button (click)="logOut()" *ngIf="IsAuthorize()">Выйти</button>
+</nav>
+
+<h1>Домашняя страница</h1>
+
+<p *ngIf="!auth.authorized()">Войдите чтобы поспотреть дневник</p>

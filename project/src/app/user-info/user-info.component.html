@@ -1,0 +1,46 @@
+<div class="container">
+  <button type="button" mat-button (click)="deleteUser()" *ngIf="!authCompare()">Удалить пользователя</button><br><br>
+
+  <table class="simple-little-table" cellspacing='0'>
+    <tr>
+      <td colspan="2">{{role == 'teacher' ? 'Учитель' : 'Ученик'}}</td>
+    </tr>
+    <tr>
+      <td>Фамилия</td>
+      <td (click)="changeInfo(1)">
+        {{val == 1 && !authCompare() ? '' : user.surname}} <input *ngIf="val == 1 && !authCompare()" type="text" [(ngModel)]="input" (keyup.enter)="updateInfo(input)">
+      </td>
+    </tr>
+    <tr>
+      <td>Имя</td>
+      <td (click)="changeInfo(2)">
+        {{val == 2 && !authCompare() ? '' : user.name}} <input *ngIf="val == 2 && !authCompare()" type="text" [(ngModel)]="input" (keyup.enter)="updateInfo(input)">
+      </td>
+    </tr>
+    <tr>
+      <td>Отчество</td>
+      <td (click)="changeInfo(3)">
+        {{val == 3 && !authCompare() ? '' : user.patronymic}} <input *ngIf="val == 3 && !authCompare()" type="text" [(ngModel)]="input" (keyup.enter)="updateInfo(input)">
+      </td>
+    </tr>
+    <tr *ngIf="role === 'student'" [routerLink]="['/changeUser' ,user.group]">
+      <td>Группа</td>
+      <td (click)="changeInfo(4)">
+        {{val == 4 ? '' : user.group}}
+          <select *ngIf="val == 4" [(ngModel)]="input" (keyup.enter)="updateInfo(input)">
+            <option [value] = "group" *ngFor = "let group of groups"> {{group}} </option>
+          </select>
+      </td>
+    </tr>
+  </table>
+
+
+  <p *ngIf="!authCompare()">Нажмите на информацию, чтобы изменить её</p>
+  <br><br>
+
+  <app-user-dop-info></app-user-dop-info>
+
+  <br><br>
+  <button type="button" mat-button (click)="Back()">Назад</button>
+
+</div>
